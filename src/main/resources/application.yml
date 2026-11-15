@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Produtos API #Definindo o nome da aplicação que será vinculada ao banco de dados
+  datasource:
+    url: jdbc:h2:mem:produtos #Url do banco de dados SQL que criei no arquivo data.sql
+    username: sa #Username padrão do banco de dados
+    password: 123 #Senha qualquer, facil pra não esquecer
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect #Utilizando o dialeto do H2 para gerenciar os dados
+  h2:
+    console:
+      enabled: true #Habilito que os dados sejam exibidos no console
+      path: /h2-console #Caminho do banco de dados para colocar no navegador: localhost:8080/h2-console
+#Basicamente, nesse arquivo eu crio o banco de dados

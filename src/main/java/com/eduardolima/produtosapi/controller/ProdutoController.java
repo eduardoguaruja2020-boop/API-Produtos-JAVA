@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProdutoController {
 
     @PostMapping // Anotação marcando esse método como POST, ou seja, ele envia informações pro servidor
-    public void salvar(@RequestBody Produto produto){ // Digo para o String passar os dados recebidos pelo body como parametros para a classe Produto (@RequestBody)
+    public Produto salvar(@RequestBody Produto produto){ // Digo para o String passar os dados recebidos pelo body como parametros para a classe Produto (@RequestBody)
         System.out.println("Produto recebido!" + produto);
+        return produto;
     }
 }
+//Nesse arquivo, eu faço o metódo de inserção POST para o servidor, esse arquivo que manda os dados

@@ -1,21 +1,22 @@
 package com.eduardolima.produtosapi.model;
 
-//POJO - Plain Old Java Object
+// POJO - Plain Old Java Object
 // Bom e velho objeto java, com seus atributos, getters, setters e métodos
+// Nesse arquivo, eu crio o objeto produto e seus atributos, que será enviado ao banco de dados
 
 import org.springframework.web.bind.annotation.PostMapping;
 
 public class Produto {
-    private int id;
+    private String id;
     private String nome;
     private String descricao;
     private double preco;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

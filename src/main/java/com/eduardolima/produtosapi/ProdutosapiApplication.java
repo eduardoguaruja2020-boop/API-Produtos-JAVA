@@ -13,3 +13,4 @@ public class ProdutosapiApplication {
 	}
 
 }
+// Esse é o arquivo principal, é ele que eu executo pra deixar o servidor aberto na rede e poder fazer as requisições pelo Postman
